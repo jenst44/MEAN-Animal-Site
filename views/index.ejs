@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animalzing</title>
+	<link rel="stylesheet" href="/myCSS.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.destroy').click(function(){
+				return confirm("Are you sure you want to obliterate this species?")
+			})
+		});
+	</script>
+</head>
+<body>
+	<div class="mainBackground">
+		<div class="container-fluid">
+			<div class="row linkBar">
+				<div class="col-md-1"></div>
+				<div class="col-md-11">
+					<a class="btn btn-info" href="/mongooses/new">New Animal</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-11">
+					<h1 class="header">Welcome Animal Lubbers</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6 animalBox vhHeight">
+					<h3>Animals in Database:</h3>
+					<% for(idx in animals) { %>
+						<div class="animalDisplay">
+							<h4>Species Name: <%= animals[idx].name %></h4>
+							<h4>Description: "<%= animals[idx].description %>" %></h4>
+							<a class="whiteLink" href="/mongooses/<%= animals[idx]._id %>/edit">Edit Species</a>
+							<a class="whiteLink destroy" href="/mongooses/<%= animals[idx]._id %>/destroy">Make Them Extinct</a>
+						</div>
+					<% } %>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-3"><img class="lionIMG" src="Colorful-Lion-Head-Painting.jpg"</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

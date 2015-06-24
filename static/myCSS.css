@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+.mainBackground {
+	background-image: url('22371_screenshot_20.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width:100%;
+	height: 100%;
+	position: static;
+}
+
+.header {
+	margin-top: 60px;
+	color: white;
+}
+
+.linkBar {
+	background-color: rgba(10, 90, 128, 0.7);	padding: 10px;
+	opacity: 1;
+}
+
+button .button {
+	color:#DC7226;
+	font-size: 18px;
+	opacity: 1;
+}
+
+.headerButton {
+	margin-right: 40px;
+}
+
+.whiteLink {
+	color: lightblue;
+	margin-right: 40px;
+}
+
+.whiteLink:hover {
+	color: #E1AF34;
+}
+
+.animalBox {
+	background-color: rgba(10, 90, 128, 0.8);
+	color: white;
+	padding:20px;
+	overflow: auto;
+}
+
+	.vhHeight {
+		max-height: 70VH;
+	}
+	.animalBox h3 {
+		color: #E1AF34;
+	}
+
+	.animalDisplay {
+		padding: 20px;
+		margin-top: 20px;
+		border-bottom: 1px solid silver;
+		border: 1px solid #E1AF34;
+	}
+
+	.lionIMG {
+		width:100%;
+		height: 80VH;
+		border-radius: 20px;
+	}
