@@ -16,9 +16,9 @@ var AnimalSchema = new mongoose.Schema({
 
 var Animal = mongoose.model('animal', AnimalSchema);
 
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/client'));
 
-app.set('views', (__dirname + '/views'));
+app.set('views', (__dirname + '/client/views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {

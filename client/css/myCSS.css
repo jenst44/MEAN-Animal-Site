@@ -12,12 +12,13 @@ body {
 }
 
 .mainBackground {
-	background-image: url('22371_screenshot_20.png');
+	background-image: url('/images/22371_screenshot_20.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width:100%;
 	height: 100%;
 	position: static;
+	overflow: scroll;
 }
 
 .header {
@@ -72,6 +73,13 @@ button .button {
 
 	.lionIMG {
 		width:100%;
-		height: 80VH;
+		height: 70VH;
 		border-radius: 20px;
 	}
+
+.mainRow {
+	height: 100%;
+}
+
+
+
